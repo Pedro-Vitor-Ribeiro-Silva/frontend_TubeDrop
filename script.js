@@ -18,7 +18,8 @@ async function baixarVideo() {
 
     if (!response.ok) {
       const erro = await response.json();
-      mostrarMensagem(erro.error || 'Erro ao baixar vídeo.');
+      mostrarMensagem('Erro ao baixar vídeo.');
+      console.log(erro.error)
       return;
     }
 
@@ -55,7 +56,8 @@ async function baixarAudio() {
 
     if (!response.ok) {
       const erro = await response.json();
-      mostrarMensagem(erro.error || 'Erro ao baixar áudio.');
+      mostrarMensagem('Erro ao baixar áudio.');
+      console.log(erro.error)
       return;
     }
 
@@ -100,5 +102,15 @@ function inspiracao() {
     element.innerText = "Fiz o site para ajudar a Manu quando ela precisar baixar algo do YouTube de novo ❤";
   } else {
     element.innerText = "TubeDrop";
+  }
+}
+
+function pmae() {
+  const element = document.getElementById("pmae");
+  
+  if (element.innerText === "Grátis!") {
+    element.innerText = "Para Mamãe, Eu te amo muito ❤";
+  } else {
+    element.innerText = "Grátis!";
   }
 }
