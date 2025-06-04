@@ -8,7 +8,7 @@ async function baixarVideo() {
   mostrarMensagem('Preparando download do vídeo...');
   
   try {
-    const response = await fetch('https://tubedrop.up.railway.app/download/video', {
+    const response = await fetch('https://backend-tubedrop.onrender.com/download/video', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -46,7 +46,7 @@ async function baixarAudio() {
   mostrarMensagem('Preparando download do áudio...');
   
   try {
-    const response = await fetch('https://tubedrop.up.railway.app/download/audio', {
+    const response = await fetch('https://backend-tubedrop.onrender.com/download/audio', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
