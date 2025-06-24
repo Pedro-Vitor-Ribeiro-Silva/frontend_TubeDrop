@@ -8,7 +8,7 @@ async function baixarVideo() {
   mostrarMensagem('Preparando download do vídeo...');
   
   try {
-    const response = await fetch('http://127.0.0.1:5000/download/video', {
+    const response = await fetch('http://10.142.227.144:5000/download/video', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -46,7 +46,7 @@ async function baixarAudio() {
   mostrarMensagem('Preparando download do áudio...');
   
   try {
-    const response = await fetch('http://127.0.0.1:5000/download/audio', {
+    const response = await fetch('http://10.142.227.144:5000/download/audio', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
